@@ -122,6 +122,22 @@ function Navbar() {
                                                 ""
                                             )}
                                         </div>
+                                        {user ? (
+                                            ""
+                                        ) : (
+                                            <Link
+                                                to={"/login"}
+                                                className="text-sm font-medium text-gray-700 "
+                                                style={{
+                                                    color:
+                                                        mode === "dark"
+                                                            ? "white"
+                                                            : "",
+                                                }}
+                                            >
+                                                Sig In
+                                            </Link>
+                                        )}
 
                                         {user ? (
                                             <div className="flow-root">
@@ -273,6 +289,23 @@ function Navbar() {
                                         >
                                             All Products
                                         </Link>
+                                        {user ? (
+                                            ""
+                                        ) : (
+                                            <Link
+                                                to={"/login"}
+                                                className="text-sm font-medium text-gray-700 "
+                                                style={{
+                                                    color:
+                                                        mode === "dark"
+                                                            ? "white"
+                                                            : "",
+                                                }}
+                                            >
+                                                Sig In
+                                            </Link>
+                                        )}
+
                                         {user ? (
                                             <Link
                                                 to={"/order"}
